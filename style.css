@@ -1,0 +1,258 @@
+
+.box {
+  border-color: #5eb7b7;
+  width: 50%;
+}
+
+
+
+.node circle {
+  cursor: pointer;
+  fill: #fff;
+  stroke: #beebe9;
+}
+
+.node rect{
+  cursor: pointer;
+  fill: #fff;
+  stroke: #beebe9;
+}
+
+.node ellipse{
+  cursor: pointer;
+  fill: #fff;
+  stroke: #beebe9;
+}
+
+.node text {
+  font-size: 11px;
+}
+
+path.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+.node.selected circle {
+  fill: #f8f8f8;
+  stroke: #5eb7b7;
+}
+
+.node.selected rect {
+  fill: #f8f8f8;
+  stroke: #5eb7b7;
+}
+
+.node.selected ellipse {
+  fill: #f8f8f8;
+  stroke: #5eb7b7;
+}
+
+.tool{
+  float: left;
+  position: relative;
+  border-radius: 12px;
+  width: 7em;
+  height: 4em;
+  background-color: white;
+  color: black;
+  border: 2px solid #9be3de;
+  margin-bottom: .5em;
+}
+
+.tool:hover {
+  background-color: #ececeb;
+}
+
+.btn{
+  float: left;
+  position: relative;
+  top: 10px;
+  left: 68.2%;
+  background: #5eb7b7;
+  background-image: -webkit-linear-gradient(top, #beebe9, #5eb7b7);
+  background-image: -moz-linear-gradient(top, #beebe9, #5eb7b7);
+  background-image: -ms-linear-gradient(top, #beebe9 #5eb7b7);
+  background-image: -o-linear-gradient(top, #beebe9, #5eb7b7);
+  background-image: linear-gradient(to bottom, #beebe9, #5eb7b7);
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  -webkit-box-shadow: 2px 3px 7px #f4f6f6;
+  -moz-box-shadow: 2px 3px 7px #f4f6f6;
+  box-shadow: 2px 3px 7px #f4f6f6;
+  font-family: 'Mansalva', cursive;
+  color: #f4f6f6;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #beebe9;
+  background-image: -webkit-linear-gradient(top, #5eb7b7, #beebe9);
+  background-image: -moz-linear-gradient(top, #5eb7b7, #beebe9);
+  background-image: -ms-linear-gradient(top, #5eb7b7, #beebe9);
+  background-image: -o-linear-gradient(top, #5eb7b7, #beebe9);
+  background-image: linear-gradient(to bottom, #5eb7b7, #beebe9);
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+ul li::before{
+  content: "\2022";
+  color:#5eb7b7;
+}
+
+.toollst{
+  padding-left: .6em;
+}
+
+.tbody{
+  border: 1px solid #5eb7b7;
+}
+
+.tooltable{
+  background-color: #5eb7b7;
+  border: 1px solid #5eb7b7;
+}
+
+.description_box{
+  height:510px;
+  width: 350px;
+  border: 1px solid #5eb7b7;
+}
+
+#topic{
+  text-align: center;
+}
+
+#detail{
+  margin-left: 1em;
+}
+.onthird{
+  width: 33.3%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: transparent;
+  position: absolute;
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {}
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    background-color: transparent;
+    bottom: 100%;
+  }
+  #body {
+    background: white;
+    margin: 0;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica;
+  }
+
+  #chart {
+    position: relative;
+    position: absolute;
+    top: 0;
+  }
+
+  rect {
+    fill: none;
+    pointer-events: all;
+  }
+
+  pre {
+    font-size: 18px;
+  }
+
+  line {
+    stroke: #000;
+    stroke-width: 1.5px;
+  }
+
+  .string, .regexp {
+    color: #f39;
+  }
+
+  .keyword {
+    color: #00c;
+  }
+
+  .comment {
+    color: #777;
+    font-style: oblique;
+  }
+
+  .number {
+    color: #369;
+  }
+
+  .class, .special {
+    color: #1181B8;
+  }
+
+  a:link, a:visited {
+    color: #000;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #666;
+  }
+
+  .hint {
+    position: absolute;
+    right: 0;
+    width: 1280px;
+    font-size: 12px;
+    color: #999;
+  }
+
+  #sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    background: gray;
+  }
+
+  #toolbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    background: white;
+  }
+
+  /* #footer{
+
+  position: absolute; */
+  #footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }

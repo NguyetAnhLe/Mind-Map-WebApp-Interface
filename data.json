@@ -1,0 +1,39 @@
+{
+  "name": "Software Dev",
+  "shape": "circle",
+  "description" : "Our class topic",
+  "children": [
+    {
+      "name": "Feasibility",
+	  "description" : "Feasibility and Planning phase\n A feasibility study precedes the decision to begin a project.  It answers questions such as: What is the scope of teh proposed project?  Is the project technically feasible?  What are the benefits? What are the costs, time table?  A feasibility study leads to a decision: go or no-go.",
+	  "shape": "circle",
+      "children": [
+        {"name": "scope", "shape": "ellipse"},
+        {"name": "benefits", "shape": "ellipse"}
+      ]
+    },
+    {"name": "Requirements", "shape": "ellipse",
+	  "description" : "The requirements analysis and definition establish the system's services, constraints and goals by consultation with users. They are then defined in a manner that is understandable by both users and development staff.",
+      "children": [
+        {"name": "analysis", "shape": "ellipse"},
+        {"name": "definition", "shape": "ellipse"},
+		{"name": "speculation", "shape": "ellipse"}
+      ]
+	},
+	{"name": "Design", "shape": "ellipse",
+	  "description" : "The design describes the system from the software developers point of view",
+      "children": [
+        {"name": "system", "shape": "ellipse", "description" : "Partition the requirements to hardware or software systems.  Establishes an overall system architecture"},
+        {"name": "software", "shape": "ellipse", "description" : "Represent the software system functions in a form that can be transformed into one or more executable programs"},
+		{"name": "UMLs", "shape": "ellipse", "description" : "Diagram used to represent the software design portion of the design phase"}
+      ]
+	},
+	{"name": "Implementation", "shape": "ellipse",
+	  "description" : "This is where the code base is actually developed and tested",
+      "children": [
+        {"name": "programming", "shape": "ellipse", "description" : "The software design is realized as a set of programs or program units.  (Written specifically, acquired from elsewhere, or modified.)  "},
+        {"name": "testing", "shape": "ellipse", "description" : " Individual components are tested against specifications. The individual program units are integrated and tested against the design as a complete system"}
+      ]
+	}
+  ]
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--drop menu from bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <style type = "text/css">
+  td,th{
+    padding: 2px;
+  }
+  hr{
+    border-style: none;
+    border-top-style: dotted;
+    border-color: white;
+    border-width: 0.3em;
+    margin: 15px auto 15px;
+    width: 70%;
+  }
+  </style>
+</head>
+
+<body>
+  <table >
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <td  class = "tbody" >
+              <div style="background-color: #f8f8f8" id="body">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td  class = "tooltable" >
+              <div>
+                <hr>
+                <button class = "tool" onclick="createNew(); return false;">New map</button>
+                <!-- add nodes -->
+                <div class="dropdown">
+                  <button class="tool dropbtn">⏶ <br>New nodes</button>
+                  <div class="dropdown-content">
+                    <button class = "tool" onclick="addNodes('right'); return false;">Add nodes right</button>
+                    <button class = "tool"  onclick="addNodes('left'); return false;">Add nodes left</button>
+                  </div>
+                </div>
+                <button class = "tool" onclick="addNodeName(); return false;">Add node name</button>
+                <button class = "tool" onclick="addDescription(); return false;">Add Description</button>
+                <!--  <button class = "tool" onclick="getDescription()">Node Detail</button> -->
+                <button class = "tool" onclick="delNode(); return false;">Delete node</button>
+                <!-- Move Nodes -->
+                <div class="dropdown">
+                  <button class="tool dropbtn">⏶ <br> Move Nodes</button>
+                  <div class="dropdown-content">
+                    <button class = "tool" onclick="moveNodes('right', 'left'); return false;">Move right to left</button>
+                    <button class = "tool" onclick="moveNodes('left', 'right'); return false;">Move left to right</button>
+                  </div>
+                </div>
+                <!-- Connector Change -->
+                <div class="dropdown">
+                  <button class="tool dropbtn">⏶ <br>Edges Style</button>
+                  <div class="dropdown-content">
+                    <button class = "tool" onclick="setConnector('diagonal'); return false;">Diagonal connector</button>
+                    <button class = "tool" onclick="setConnector('elbow'); return false;">Elbow connector</button>
+                  </div>
+                </div>
+                <button class = "tool jscolor {valueElement:'chosen-value', onFineChange:'setTextColor(this)'}" onclick="setColor(); return false;" id = "aa">Change color</button>
+                <!-- change colors -->
+                <div class="dropdown">
+                  <button class="tool dropbtn">⏶ <br>Node Shape</button>
+                  <div class="dropdown-content">
+                    <button class = "tool" onclick="changeShape('circle');return false;">Change<br>circle</button>
+                    <button class = "tool" onclick="changeShape('rect');return false;">Change<br>rectangle</button>
+                    <button class = "tool" onclick="changeShape('ellipse');return false;">Change<br>ellipse</button>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td valign = "top">
+        <div class = "description_box">
+          <h2 id = "topic"></h2>
+          <hr class = "box">
+          <p id = "detail"></p>
+          <textarea id ='note' style =" box-sizing:border-box; height:76%; width: 99%; border: none;"></textarea>
+        </div>
+
+      </td>
+    </tr>
+  </table>
+  <!--<a href = "study.html" class="btn" >STUDY MODE</a>-->
+  <!--
+  <div id="footer">[Enter] Change name, [Left] Move select left, [Right] Move selection right, [Up] Move selection up, [Down] Move selection down, [Ins] Add new node,  [Del] Delete selected node</div>
+-->
+<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="mousetrap.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="jscolor.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
